@@ -38,6 +38,35 @@ namespace TWG.PostageApp.Message
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="Attachment"/> class.
+        /// </summary>
+        /// <param name="data">
+        /// The data.
+        /// </param>
+        /// <param name="fileName">
+        /// The filename.
+        /// </param>
+        /// <param name="contentType">
+        /// The content type.
+        /// </param>
+        public Attachment(byte[] data, string fileName, string contentType = "application/octet-stream")
+        {
+            if (data == null)
+            {
+                throw new ArgumentNullException("data");
+            }
+
+            if (fileName == null)
+            {
+                throw new ArgumentNullException("fileName");
+            }
+
+            ContentStream = new MemoryStream(data);
+            ContentType = contentType;
+            FileName = fileName;
+        }
+
+        /// <summary>
         /// Gets file name.
         /// </summary>
         public string FileName { get; private set; }
