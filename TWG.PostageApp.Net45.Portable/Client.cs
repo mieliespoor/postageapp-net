@@ -180,7 +180,7 @@ namespace TWG.PostageApp
             var client = new HttpClient { BaseAddress = new Uri(BaseUri) };
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            var dataJson = await JsonConvert.SerializeObjectAsync(data, Formatting.None, _requestSerializerSettings);
+            var dataJson = JsonConvert.SerializeObject(data, Formatting.None, _requestSerializerSettings);
             HttpContent content = new StringContent(dataJson, _encoding, "application/json");
 
             HttpResponseMessage response;
@@ -205,7 +205,7 @@ namespace TWG.PostageApp
                     stringResponse = await response.Content.ReadAsStringAsync();
                     if (stringResponse != null)
                     {
-                        var responseC = await JsonConvert.DeserializeObjectAsync<ResponseContainer<T>>(stringResponse, _responseSerializerSettings);
+                        var responseC = JsonConvert.DeserializeObject<ResponseContainer<T>>(stringResponse, _responseSerializerSettings);
                         throw new PostageResponseException<T>(responseC, null);
                     }
                 }
@@ -213,7 +213,7 @@ namespace TWG.PostageApp
                 throw new PostageResponseException<MessageResponse>();
             }
 
-            var responseContainer = await JsonConvert.DeserializeObjectAsync<ResponseContainer<T>>(stringResponse, _responseSerializerSettings);
+            var responseContainer = JsonConvert.DeserializeObject<ResponseContainer<T>>(stringResponse, _responseSerializerSettings);
             return responseContainer;
         } 
     }
