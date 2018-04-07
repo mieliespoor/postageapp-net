@@ -6,3 +6,4 @@
 PostageApp/obj/Debug/PostageApp.csproj.FileListAbsolute.txt
 TWG.PostageApp.Net45.Portable.Tests/App.config
 **/packages/*
+.vs/

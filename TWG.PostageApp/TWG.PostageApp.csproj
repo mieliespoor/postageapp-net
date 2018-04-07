@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>PostageApp API client library for .NET Standard</Description>
+    <Authors>Derek Watson</Authors>
+    <Product>PostageApp</Product>
+    <PackageId>PostageApp</PackageId>
+    <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>http://github.com/derek-watson/postageapp-net</PackageProjectUrl>
+    <PackageIconUrl>http://postageapp.com/logos/postageapp-32px.png</PackageIconUrl>
+    <RepositoryUrl>http://github.com/derek-watson/postageapp-net</RepositoryUrl>
+    <PackageTags>postageapp send email delivery template background api smtp client</PackageTags>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+</Project>
