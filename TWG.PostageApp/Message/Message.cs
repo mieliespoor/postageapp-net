@@ -35,13 +35,13 @@ namespace TWG.PostageApp.Message
         /// Gets attachments.
         /// </summary>
         [JsonProperty(PropertyName = "attachments")]
-        public IList<Attachment> Attachments { get; private set; }
+        public List<Attachment> Attachments { get; private set; }
 
         /// <summary>
         /// Gets recipient's emails.
         /// </summary>
         [JsonProperty(PropertyName = "recipiens")]
-        public IList<Recipient> Recipients { get; private set; }
+        public List<Recipient> Recipients { get; private set; }
 
         /// <summary>
         /// Gets or sets recipient's email.
@@ -63,13 +63,13 @@ namespace TWG.PostageApp.Message
         /// Gets variables.
         /// </summary>
         [JsonProperty(PropertyName = "variables")]
-        public IDictionary<string, string> Variables { get; private set; }
+        public Dictionary<string, string> Variables { get; private set; }
 
         /// <summary>
         /// Gets message headers.
         /// </summary>
         [JsonProperty(PropertyName = "headers")]
-        public IDictionary<string, string> Headers { get; private set; }
+        public Dictionary<string, string> Headers { get; private set; }
 
         /// <summary>
         /// Gets or sets recipient override email.
