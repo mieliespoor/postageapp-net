@@ -1,4 +1,4 @@
-#PostageApp .NET
+# PostageApp .NET
 
 This client library will allow you to quickly send email from a .NET 3.5+ application via the [PostageApp](http://postageapp.com) API. 
 Specify one or more recipients, your template along with variables to substitute, enjoy open and click tracking, and quick, reliable delivery.
