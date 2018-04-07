@@ -72,12 +72,6 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TWG.PostageApp.Net45.Portable\TWG.PostageApp.Net45.Portable.csproj">
-      <Project>{23c87832-8e46-463f-a489-92c5a987e905}</Project>
-      <Name>TWG.PostageApp.Net45.Portable</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
