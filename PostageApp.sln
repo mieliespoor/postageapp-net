@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWG.PostageApp.Net45.Tests", "TWG.PostageApp.Net45.Tests\TWG.PostageApp.Net45.Tests.csproj", "{DA7D66BE-42C6-4B6D-B11C-8E0AA69169B5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWG.PostageApp.Net45", "TWG.PostageApp.Net45\TWG.PostageApp.Net45.csproj", "{52AE9C82-E2C1-4978-8136-B49081214FA6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{DE19856C-B524-4D8C-8CED-B69A96127EB5}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -14,15 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWG.PostageApp.Net45.WP8", "TWG.PostageApp.Net45.WP8\TWG.PostageApp.Net45.WP8.csproj", "{A83EA74A-E3AE-493A-BEF0-736214DA5874}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWG.PostageApp.Net45.WP8.Tests", "TWG.PostageApp.Net45.WP8.Tests\TWG.PostageApp.Net45.WP8.Tests.csproj", "{EA80303E-E54F-417F-A949-F88C2F6B68B5}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F7E8684F-72ED-4D15-81CD-682EA5428DEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWG.PostageApp", "TWG.PostageApp\TWG.PostageApp.csproj", "{F2F2FF3C-697A-4A30-BF34-44E74777D73C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TWG.PostageApp", "TWG.PostageApp\TWG.PostageApp.csproj", "{F2F2FF3C-697A-4A30-BF34-44E74777D73C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TWG.PostageApp.Tests", "TWG.PostageApp.Tests\TWG.PostageApp.Tests.csproj", "{647BA7D2-BA12-4680-ABCF-E24A609FEE0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TWG.PostageApp.Tests", "TWG.PostageApp.Tests\TWG.PostageApp.Tests.csproj", "{647BA7D2-BA12-4680-ABCF-E24A609FEE0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,20 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA7D66BE-42C6-4B6D-B11C-8E0AA69169B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA7D66BE-42C6-4B6D-B11C-8E0AA69169B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA7D66BE-42C6-4B6D-B11C-8E0AA69169B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52AE9C82-E2C1-4978-8136-B49081214FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52AE9C82-E2C1-4978-8136-B49081214FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52AE9C82-E2C1-4978-8136-B49081214FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52AE9C82-E2C1-4978-8136-B49081214FA6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A83EA74A-E3AE-493A-BEF0-736214DA5874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A83EA74A-E3AE-493A-BEF0-736214DA5874}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A83EA74A-E3AE-493A-BEF0-736214DA5874}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A83EA74A-E3AE-493A-BEF0-736214DA5874}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA80303E-E54F-417F-A949-F88C2F6B68B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA80303E-E54F-417F-A949-F88C2F6B68B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA80303E-E54F-417F-A949-F88C2F6B68B5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F2F2FF3C-697A-4A30-BF34-44E74777D73C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2F2FF3C-697A-4A30-BF34-44E74777D73C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2F2FF3C-697A-4A30-BF34-44E74777D73C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,8 +35,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{DA7D66BE-42C6-4B6D-B11C-8E0AA69169B5} = {F7E8684F-72ED-4D15-81CD-682EA5428DEE}
-		{EA80303E-E54F-417F-A949-F88C2F6B68B5} = {F7E8684F-72ED-4D15-81CD-682EA5428DEE}
 		{647BA7D2-BA12-4680-ABCF-E24A609FEE0C} = {F7E8684F-72ED-4D15-81CD-682EA5428DEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
