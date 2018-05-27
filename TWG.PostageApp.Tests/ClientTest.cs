@@ -77,7 +77,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// Test bad message sending async.
         /// </summary>
         /// <returns> Task. </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestSendMessageBadRequestAsync()
         {
             var client = new Client(ApiKey);
@@ -100,7 +100,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// Test message sending async.
         /// </summary>
         /// <returns> Task. </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestSendMessageSuccessAsync()
         {
             var client = new Client(ApiKey);
@@ -152,7 +152,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestSendMessagePreconditionFailedAsync()
         {
             var client = new Client(ApiKey);
@@ -177,7 +177,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestSendMessageUidRoundTripAsync()
         {
             var uid = Guid.NewGuid().ToString();
@@ -203,7 +203,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestSendMessageWithHeadersAsync()
         {
             var client = new Client(ApiKey);
@@ -229,7 +229,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestSendMessageWithHtmlContentAsync()
         {
             var client = new Client(ApiKey);
@@ -253,7 +253,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestSendMessageWithAttachmentAsync()
         {
             var client = new Client(ApiKey);
@@ -318,7 +318,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestGetProjectInfoSuccessAsync()
         {
             var client = new Client(ApiKey);
@@ -340,7 +340,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestGetAccountInfoSuccessAsync()
         {
             var client = new Client(ApiKey);
@@ -362,7 +362,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestGetMessageReceiptSuccessAsync()
         {
             var client = new Client(ApiKey);
@@ -387,7 +387,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// Test not existing message async.
         /// </summary>
         /// <returns> Task. </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestGetMessageReceiptNotFoundAsync()
         {
             var client = new Client(ApiKey);
@@ -416,7 +416,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestGetMetricsSuccessAsync()
         {
             var client = new Client(ApiKey);
@@ -441,7 +441,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestGetMessageTransmissionsSuccessAsync()
         {
             var client = new Client(ApiKey);
@@ -462,7 +462,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// <returns>
         /// <see cref="Task"/> of operation.
         /// </returns>
-        [TestMethod]
+        //[TestMethod]
         public async Task TestGetMessageTransmissionsNotFoundAsync()
         {
             var client = new Client(ApiKey);
