@@ -33,7 +33,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// </summary>
         private static string ApiKey
         {
-            get { return ConfigurationManager.AppSettings["apiKey"]; }
+            get { return "vagzwCwD1GIFPR0qrYPKKd9SJCR6YJyw"; }
         }
 
         #endregion
@@ -77,7 +77,8 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// Test bad message sending async.
         /// </summary>
         /// <returns> Task. </returns>
-        //[TestMethod]
+        [TestMethod]
+        [ExpectedException(typeof(PostageResponseException<MessageResponse>))]
         public async Task TestSendMessageBadRequestAsync()
         {
             var client = new Client(ApiKey);
