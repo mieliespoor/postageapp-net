@@ -12,7 +12,7 @@
     <PackageIconUrl>http://postageapp.com/logos/postageapp-32px.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/mieliespoor/postageapp-net</RepositoryUrl>
     <PackageTags>postageapp send email delivery template background api smtp client</PackageTags>
-    <Version>2.0.1</Version>
+    <Version>2.0.2</Version>
     <Company />
     <PackageReleaseNotes>[2.0.2] Update Newtonsoft.Json reference
 [2.0.1] Initial .NET Standard Release</PackageReleaseNotes>
