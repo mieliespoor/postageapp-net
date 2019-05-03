@@ -33,7 +33,7 @@ namespace TWG.PostageApp.Net45.Portable.Tests
         /// </summary>
         private static string ApiKey
         {
-            get { return "vagzwCwD1GIFPR0qrYPKKd9SJCR6YJyw"; }
+            get { return ConfigurationManager.AppSettings["apiKey"]; }
         }
 
         #endregion
